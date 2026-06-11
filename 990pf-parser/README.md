@@ -16,7 +16,7 @@ It handles **both** the pre-2014 and the 2015-or-later IRS XML schemas in a sing
 
 Two earlier scripts handled the pre-2014 and post-2014 schemas separately and had gaps:
 
-- **Missed foundations.** Some filers (e.g. the *Daniel and Joanna S Rose Fund*) tag grantees as `<RecipientPersonNm>` rather than `<RecipientBusinessName>`. The old post-2014 parser only read the latter and silently extracted **zero** grants from these filers. This version falls back to `RecipientPersonNm` and recovers them.
+- **Missed foundations.** Some filers tag grantees as `<RecipientPersonNm>` rather than `<RecipientBusinessName>`. The old post-2014 parser only read the latter and silently extracted **zero** grants from these filers. This version falls back to `RecipientPersonNm` and recovers them.
 - **No de-duplication.** A foundation that amends a return files a second XML for the same tax year. Because the IRS organizes files by processing year, the original and the correction can land in different folders. The old per-folder scripts double-counted them. This version de-duplicates globally.
 - **Blank columns.** The `RecipientEIN` field was consistently empty and has been dropped from the output.
 
