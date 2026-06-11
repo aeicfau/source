@@ -1,6 +1,6 @@
 # Technical Appendix: How the Dashboard Was Assembled
 
-This appendix documents how the grants dashboard was built, from raw public filings to the tagged, deduplicated dataset that the dashboard displays. The two data-engineering steps are reproducible exactly: a reader with a Python environment can rebuild the flat grants file from the public source. The two classification steps are reproducible in method as they require individual judgment and iteration, as described in the two methodology files. Anyone user can audit, challenge, or rebuild it under their own rules.
+This appendix documents how AEI SOURCE was built, from raw public filings to the tagged, deduplicated dataset that the dashboard displays. The two data-engineering steps are reproducible exactly: a reader with a Python environment can rebuild the flat grants file from the public source. The two classification steps are reproducible in method as they require individual judgment and iteration, as described in the two methodology files. Anyone user can audit, challenge, or rebuild it under their own rules.
 
 The build has four components. Two are data-engineering steps that turn raw tax filings into a flat file. Two are classification steps that add analytical structure to that flat file. Each component is published as its own set of files so that any one of them can be inspected, rerun, or replaced independently.
 
