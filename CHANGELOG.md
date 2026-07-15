@@ -10,6 +10,7 @@ Consolidated `990pf-downloader/download_990pf.py` and `990pf-parser/irs_parse_xm
 - Simplified the canonical institution table's schema: `canonical_id` now serves as the IPEDS unitid directly for real institutions, so a separate `ipeds_unitid` column is no longer needed.
 - Standardized the three SQL-upload file formats (institutions, grants, processed-returns) with explicit, documented column contracts.
 - Added tracking of whether a filer is itself a college/school/hospital/supporting-organization (based on the 7 IRS Schedule A flags) to the processed-returns table.
+- Rewrote `990-grant-pipeline/README.md` and `PRD_Form990_HigherEd_Grants_Pipeline.md` to match the schema and design changes above.
 
 ## 2026-06-25
 
