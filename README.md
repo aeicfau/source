@@ -1,4 +1,4 @@
-# Technical Appendix: How the Dashboard Was Assembled
+# Technical Appendix: How the Portal Was Assembled
 
 This appendix documents how AEI SOURCE was built, from raw public filings to the tagged, deduplicated dataset that the dashboard displays. The data-engineering step is reproducible exactly: a reader with a Python environment can rebuild the flat grants file from the public source. We describe the two classification steps in the markdown files, but they do require individual judgment and iteration. Any user can audit, challenge, or rebuild it under their own rules.
 
