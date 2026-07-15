@@ -396,8 +396,9 @@ self-reported purpose text, so vague operating language tags `general`; coverage
 ## 13. Repository & artifact inventory
 
 **GitHub** (`aeicfau/source`): `990-grant-pipeline/irs-990-pipeline.py` is the current, maintained
-script. `990pf-downloader/` and `990pf-parser/` hold its two now-superseded ancestors, kept for
-reference but not run. `grant-taggers/` holds prior tagging-methodology docs.
+script. Its two ancestors (`990pf-downloader/download_990pf.py`,
+`990pf-parser/irs_parse_xml_consolidated.py`) are fully superseded and have been removed from the
+repo. `grant-taggers/` holds prior tagging-methodology docs.
 
 **Local machine (`C:\form990\`)**, what the script actually needs beside it:
 

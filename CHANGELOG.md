@@ -2,7 +2,7 @@
 
 ## 2026-07-15
 
-Consolidated `990pf-downloader/download_990pf.py` and `990pf-parser/irs_parse_xml_consolidated.py` into a single self-contained pipeline, `990-grant-pipeline/irs-990-pipeline.py`. The two prior scripts are kept for reference but are superseded.
+Consolidated `990pf-downloader/download_990pf.py` and `990pf-parser/irs_parse_xml_consolidated.py` into a single self-contained pipeline, `990-grant-pipeline/irs-990-pipeline.py`. The two prior scripts are now fully superseded and have been removed from the repo.
 
 - Fixed a systemic matching bug (an admin/system-office entry was falsely tying with a real flagship campus on city), recovering a large share of previously-unresolved institutions.
 - Corrected roughly 150 specific institution name-resolution errors surfaced during manual audit, and fixed a data bug where two different real institutions (Queens College and City College of New York) had been incorrectly merged onto one placeholder ID.
