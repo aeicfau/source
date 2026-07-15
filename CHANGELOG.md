@@ -11,6 +11,7 @@ Consolidated `990pf-downloader/download_990pf.py` and `990pf-parser/irs_parse_xm
 - Standardized the three SQL-upload file formats (institutions, grants, processed-returns) with explicit, documented column contracts.
 - Added tracking of whether a filer is itself a college/school/hospital/supporting-organization (based on the 7 IRS Schedule A flags) to the processed-returns table.
 - Rewrote `990-grant-pipeline/README.md` and `PRD_Form990_HigherEd_Grants_Pipeline.md` to match the schema and design changes above.
+- Updated the root `README.md` (dashboard technical appendix) to describe the consolidated single-script pipeline and its Form 990 + Form 990-PF scope, replacing the prior two-script, 990-PF-only description.
 
 ## 2026-06-25
 
